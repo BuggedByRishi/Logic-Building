@@ -1,11 +1,26 @@
 #include<stdio.h>
 
+float calculateArea(float fValue)
+{
+    auto const float PI = 3.14;
+    auto float ans = 0.0f;
+
+    ans = PI * fValue * fValue;
+
+    return ans;
+}
+
 int main()
 {
-    int a = 10;
-    int b = 20;
+    auto float fArea = 0.0f;
+    auto float fRadius = 0.0f;
 
-    int sum = a + b;
+    printf("Enter the Radius of the Circle : ");
+    scanf("%f",&fRadius);
 
-    printf("The sum of two numbers is : %d", sum);
+    fArea = calculateArea(fRadius);
+
+    printf("Area of Circle is : %f\n",fArea);
+
+    return 0;
 }
